@@ -24,10 +24,10 @@ export const buttonTheme: ThemeComponents = {
         bg: '#ffffff',
         color: '#091A2A',
         _hover: {
-          bg: '#f2f2f2',
+          bg: '#e6e6e6',
         },
         _focus: {
-          bg: '#f2f2f2',
+          bg: '#e6e6e6',
           shadow: 'none',
         },
       },
