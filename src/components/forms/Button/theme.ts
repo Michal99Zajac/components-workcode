@@ -14,6 +14,13 @@ export const buttonTheme: ThemeComponents = {
         color: '#FFFFFF',
         _hover: {
           bg: '#173a5c',
+          _disabled: {
+            bg: '#394046',
+          },
+        },
+        _disabled: {
+          bg: '#394046',
+          opacity: 1,
         },
         _focus: {
           bg: '#173a5c',
@@ -25,6 +32,17 @@ export const buttonTheme: ThemeComponents = {
         color: '#091A2A',
         _hover: {
           bg: '#e6e6e6',
+          _disabled: {
+            bg: '#394046',
+          },
+        },
+        _disabled: {
+          bg: '#394046',
+          opacity: 1,
+          '& .chakra-spinner': {
+            borderTopColor: '#ffffff',
+            borderRightColor: '#ffffff',
+          },
         },
         _focus: {
           bg: '#e6e6e6',
