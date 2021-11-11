@@ -50,5 +50,5 @@ export const sizes: Story = () => (
 )
 
 export default {
-  title: 'Button',
+  title: 'components/forms/Button',
 } as Meta

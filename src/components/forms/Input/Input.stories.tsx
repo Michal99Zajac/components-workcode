@@ -52,5 +52,5 @@ export const inputWithAddon: Story = () => (
 )
 
 export default {
-  title: 'Input',
+  title: 'components/forms/Input',
 } as Meta
