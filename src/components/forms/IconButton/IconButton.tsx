@@ -4,7 +4,7 @@ import {
   IconButtonProps as ChakraIconButtonProps,
 } from '@chakra-ui/react'
 
-import { RingIcon, ChatIcon } from '../../icons'
+import { RingIcon, ChatIcon, MoreIcon } from '../../icons'
 
 const styles = {
   _hover: {
@@ -43,7 +43,12 @@ export function ChatIconButton(props: IconButtonProps) {
   return <ChakraIconButton icon={<ChatIcon />} {...styles} {...props} />
 }
 
+export function MoreIconButton(props: IconButtonProps) {
+  return <ChakraIconButton icon={<MoreIcon />} {...styles} {...props} />
+}
+
 export default {
   RingIconButton,
   ChatIconButton,
+  MoreIconButton,
 }
