@@ -12,6 +12,7 @@ import {
   boxTheme,
   centerTheme,
   circleTheme,
+  squareTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -29,6 +30,7 @@ const theme = extendTheme({
     ...boxTheme,
     ...centerTheme,
     ...circleTheme,
+    ...squareTheme,
   },
 })
 
