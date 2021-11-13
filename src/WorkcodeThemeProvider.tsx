@@ -7,6 +7,7 @@ import {
   inputTheme,
   iconButtonTheme,
   selectTheme,
+  textareaTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -19,6 +20,7 @@ const theme = extendTheme({
     ...inputTheme,
     ...iconButtonTheme,
     ...selectTheme,
+    ...textareaTheme,
   },
 })
 
