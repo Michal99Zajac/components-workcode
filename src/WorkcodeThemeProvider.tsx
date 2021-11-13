@@ -2,7 +2,12 @@ import React from 'react'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 
 import Fonts from './components/Fonts'
-import { buttonTheme, inputTheme, iconButtonTheme } from './components'
+import {
+  buttonTheme,
+  inputTheme,
+  iconButtonTheme,
+  selectTheme,
+} from './components'
 
 interface WorkcodeThemeProviderProps {
   children: React.ReactNode
@@ -13,8 +18,11 @@ const theme = extendTheme({
     ...buttonTheme,
     ...inputTheme,
     ...iconButtonTheme,
+    ...selectTheme,
   },
 })
+
+console.log(theme)
 
 export const WorkcodeThemeProvider = ({
   children,
