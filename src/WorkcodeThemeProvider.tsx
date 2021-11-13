@@ -14,6 +14,7 @@ import {
   circleTheme,
   squareTheme,
   containerTheme,
+  flexTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -33,6 +34,7 @@ const theme = extendTheme({
     ...circleTheme,
     ...squareTheme,
     ...containerTheme,
+    ...flexTheme,
   },
 })
 
