@@ -9,6 +9,7 @@ import {
   textareaTheme,
   selectTheme,
   aspectRatioTheme,
+  boxTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -23,6 +24,7 @@ const theme = extendTheme({
     ...selectTheme,
     ...textareaTheme,
     ...aspectRatioTheme,
+    ...boxTheme,
   },
 })
 
