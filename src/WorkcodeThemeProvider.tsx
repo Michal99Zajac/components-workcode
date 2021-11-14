@@ -42,6 +42,7 @@ import {
   pinInputTheme,
   pinInputFieldTheme,
   radioTheme,
+  radioGroupTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -89,6 +90,7 @@ const theme = extendTheme({
     ...pinInputTheme,
     ...pinInputFieldTheme,
     ...radioTheme,
+    ...radioGroupTheme,
   },
 })
 
