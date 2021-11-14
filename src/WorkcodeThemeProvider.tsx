@@ -22,6 +22,7 @@ import {
   stackTheme,
   hStackTheme,
   vStackTheme,
+  wrapTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -49,6 +50,7 @@ const theme = extendTheme({
     ...stackTheme,
     ...hStackTheme,
     ...vStackTheme,
+    ...wrapTheme,
   },
 })
 
