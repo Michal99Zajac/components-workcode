@@ -24,6 +24,7 @@ import {
   vStackTheme,
   wrapTheme,
   wrapItemTheme,
+  checkboxTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -53,6 +54,7 @@ const theme = extendTheme({
     ...vStackTheme,
     ...wrapTheme,
     ...wrapItemTheme,
+    ...checkboxTheme,
   },
 })
 
