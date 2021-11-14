@@ -19,6 +19,7 @@ import {
   gridTheme,
   gridItemTheme,
   simpleGridTheme,
+  stackTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -43,6 +44,7 @@ const theme = extendTheme({
     ...gridTheme,
     ...gridItemTheme,
     ...simpleGridTheme,
+    ...stackTheme,
   },
 })
 
