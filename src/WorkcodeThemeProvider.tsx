@@ -37,6 +37,7 @@ import {
   numberInputTheme,
   numberInputFieldTheme,
   numberInputStepperTheme,
+  numberIncrementStepperTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -79,6 +80,7 @@ const theme = extendTheme({
     ...numberInputTheme,
     ...numberInputFieldTheme,
     ...numberInputStepperTheme,
+    ...numberIncrementStepperTheme,
   },
 })
 
