@@ -33,6 +33,7 @@ import {
   formLabelTheme,
   formErrorMessageTheme,
   formHelperTextTheme,
+  buttonGroupTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -71,6 +72,7 @@ const theme = extendTheme({
     ...formLabelTheme,
     ...formErrorMessageTheme,
     ...formHelperTextTheme,
+    ...buttonGroupTheme,
   },
 })
 
