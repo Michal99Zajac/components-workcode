@@ -25,6 +25,7 @@ import {
   wrapTheme,
   wrapItemTheme,
   checkboxTheme,
+  checkboxGroupTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -55,6 +56,7 @@ const theme = extendTheme({
     ...wrapTheme,
     ...wrapItemTheme,
     ...checkboxTheme,
+    ...checkboxGroupTheme,
   },
 })
 
