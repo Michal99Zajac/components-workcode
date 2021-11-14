@@ -10,6 +10,6 @@ export const editableInputTheme: ThemeComponents = {
   },
 }
 
-export type EditableTheme = Theme & typeof editableInputTheme
+export type EditableInputTheme = Theme & typeof editableInputTheme
 
 export default editableInputTheme

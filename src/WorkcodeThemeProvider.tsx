@@ -28,6 +28,7 @@ import {
   checkboxGroupTheme,
   editableTheme,
   editableInputTheme,
+  editablePreviewTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -61,6 +62,7 @@ const theme = extendTheme({
     ...checkboxGroupTheme,
     ...editableTheme,
     ...editableInputTheme,
+    ...editablePreviewTheme,
   },
 })
 
