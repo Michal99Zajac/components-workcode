@@ -10,6 +10,6 @@ export const flexTheme: ThemeComponents = {
   },
 }
 
-export type flexTheme = Theme & typeof flexTheme
+export type FlexTheme = Theme & typeof flexTheme
 
 export default flexTheme

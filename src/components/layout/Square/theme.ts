@@ -10,6 +10,6 @@ export const squareTheme: ThemeComponents = {
   },
 }
 
-export type squareTheme = Theme & typeof squareTheme
+export type SquareTheme = Theme & typeof squareTheme
 
 export default squareTheme

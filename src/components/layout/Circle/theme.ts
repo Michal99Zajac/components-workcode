@@ -10,6 +10,6 @@ export const circleTheme: ThemeComponents = {
   },
 }
 
-export type circleTheme = Theme & typeof circleTheme
+export type CircleTheme = Theme & typeof circleTheme
 
 export default circleTheme

@@ -10,6 +10,6 @@ export const gridItemTheme: ThemeComponents = {
   },
 }
 
-export type gridItemTheme = Theme & typeof gridItemTheme
+export type GridItemTheme = Theme & typeof gridItemTheme
 
 export default gridItemTheme

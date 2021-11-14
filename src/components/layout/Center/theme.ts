@@ -10,6 +10,6 @@ export const centerTheme: ThemeComponents = {
   },
 }
 
-export type centerTheme = Theme & typeof centerTheme
+export type CenterTheme = Theme & typeof centerTheme
 
 export default centerTheme

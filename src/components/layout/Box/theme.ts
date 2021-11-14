@@ -10,6 +10,6 @@ export const boxTheme: ThemeComponents = {
   },
 }
 
-export type boxTheme = Theme & typeof boxTheme
+export type BoxTheme = Theme & typeof boxTheme
 
 export default boxTheme

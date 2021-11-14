@@ -10,6 +10,6 @@ export const spacerTheme: ThemeComponents = {
   },
 }
 
-export type spacerTheme = Theme & typeof spacerTheme
+export type SpacerTheme = Theme & typeof spacerTheme
 
 export default spacerTheme
