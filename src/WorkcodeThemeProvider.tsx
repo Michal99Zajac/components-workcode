@@ -41,6 +41,7 @@ import {
   numberDecrementStepperTheme,
   pinInputTheme,
   pinInputFieldTheme,
+  radioTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -87,6 +88,7 @@ const theme = extendTheme({
     ...numberDecrementStepperTheme,
     ...pinInputTheme,
     ...pinInputFieldTheme,
+    ...radioTheme,
   },
 })
 
