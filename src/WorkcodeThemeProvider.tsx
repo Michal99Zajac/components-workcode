@@ -29,6 +29,7 @@ import {
   editableTheme,
   editableInputTheme,
   editablePreviewTheme,
+  formControlTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -63,6 +64,7 @@ const theme = extendTheme({
     ...editableTheme,
     ...editableInputTheme,
     ...editablePreviewTheme,
+    ...formControlTheme,
   },
 })
 
