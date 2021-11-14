@@ -23,6 +23,7 @@ import {
   hStackTheme,
   vStackTheme,
   wrapTheme,
+  wrapItemTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -51,6 +52,7 @@ const theme = extendTheme({
     ...hStackTheme,
     ...vStackTheme,
     ...wrapTheme,
+    ...wrapItemTheme,
   },
 })
 
