@@ -35,6 +35,7 @@ import {
   formHelperTextTheme,
   buttonGroupTheme,
   numberInputTheme,
+  numberInputFieldTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -75,6 +76,7 @@ const theme = extendTheme({
     ...formHelperTextTheme,
     ...buttonGroupTheme,
     ...numberInputTheme,
+    ...numberInputFieldTheme,
   },
 })
 
