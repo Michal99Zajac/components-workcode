@@ -45,6 +45,7 @@ import {
   radioGroupTheme,
   rangeSliderTheme,
   rangeSliderTrackTheme,
+  rangeSliderFilledTrackTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -95,6 +96,7 @@ const theme = extendTheme({
     ...radioGroupTheme,
     ...rangeSliderTheme,
     ...rangeSliderTrackTheme,
+    ...rangeSliderFilledTrackTheme,
   },
 })
 
