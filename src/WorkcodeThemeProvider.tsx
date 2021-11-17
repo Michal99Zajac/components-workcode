@@ -35,6 +35,7 @@ import {
   sliderTrackTheme,
   sliderFilledTrackTheme,
   sliderThumbTheme,
+  switchTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -75,6 +76,7 @@ const theme = extendTheme({
     ...sliderTrackTheme,
     ...sliderFilledTrackTheme,
     ...sliderThumbTheme,
+    ...switchTheme,
   },
 })
 
