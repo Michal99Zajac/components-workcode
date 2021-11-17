@@ -1,3 +1,1 @@
-export { default } from './VStack'
-export * from './VStack'
-export * from './theme'
+export { VStack } from '@chakra-ui/react'

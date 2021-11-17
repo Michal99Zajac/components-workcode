@@ -1,3 +1,1 @@
-export { default } from './Circle'
-export * from './Circle'
-export * from './theme'
+export { Circle } from '@chakra-ui/react'

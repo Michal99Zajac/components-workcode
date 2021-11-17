@@ -1,3 +1,1 @@
-export { default } from './Box'
-export * from './Box'
-export * from './theme'
+export { Box } from '@chakra-ui/react'

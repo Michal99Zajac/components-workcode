@@ -1,3 +1,1 @@
-export { default } from './SimpleGrid'
-export * from './SimpleGrid'
-export * from './theme'
+export { SimpleGrid } from '@chakra-ui/react'

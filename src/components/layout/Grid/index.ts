@@ -1,3 +1,1 @@
-export { default } from './Grid'
-export * from './Grid'
-export * from './theme'
+export { Grid } from '@chakra-ui/react'

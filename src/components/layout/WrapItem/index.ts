@@ -1,3 +1,1 @@
-export { default } from './WrapItem'
-export * from './WrapItem'
-export * from './theme'
+export { WrapItem } from '@chakra-ui/react'

@@ -1,3 +1,1 @@
-export { default } from './Flex'
-export * from './Flex'
-export * from './theme'
+export { Flex } from '@chakra-ui/react'
