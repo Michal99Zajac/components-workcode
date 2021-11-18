@@ -6,8 +6,17 @@ import {
   buttonTheme,
   inputTheme,
   iconButtonTheme,
-  selectTheme,
   textareaTheme,
+  selectTheme,
+  checkboxTheme,
+  editableTheme,
+  formControlTheme,
+  numberInputTheme,
+  pinInputTheme,
+  radioTheme,
+  rangeSliderTheme,
+  sliderTheme,
+  switchTheme,
 } from './components'
 
 interface WorkcodeThemeProviderProps {
@@ -21,10 +30,17 @@ const theme = extendTheme({
     ...iconButtonTheme,
     ...selectTheme,
     ...textareaTheme,
+    ...checkboxTheme,
+    ...editableTheme,
+    ...formControlTheme,
+    ...numberInputTheme,
+    ...pinInputTheme,
+    ...radioTheme,
+    ...rangeSliderTheme,
+    ...sliderTheme,
+    ...switchTheme,
   },
 })
-
-console.log(theme)
 
 export const WorkcodeThemeProvider = ({
   children,

@@ -13,6 +13,7 @@
     "src"
   ],
   "dependencies": {
+    "@chakra-ui/icons": "^1.1.1",
     "@chakra-ui/react": "^1.6.12",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
@@ -39,7 +40,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "clean": "rimraf dist",
-    "compile": "yarn clean && tsdx build --tsconfig ./tsconfig.prod.json --jsx react",
+    "compile": "yarn clean && tsdx build --tsconfig ./tsconfig.prod.json",
+    "husky": "husky install",
     "prepare": "yarn compile",
     "eslint": "eslint src/**/*.{ts,tsx}"
   },
