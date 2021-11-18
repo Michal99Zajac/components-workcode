@@ -1,0 +1,5 @@
+export { Tag } from '@chakra-ui/react'
+export * from './TagCloseButton'
+export * from './TagLabel'
+export * from './TagLeftIcon'
+export * from './TagRightIcon'
