@@ -1,0 +1,7 @@
+export { Modal } from '@chakra-ui/react'
+export * from './ModalBody'
+export * from './ModalCloseButton'
+export * from './ModalContent'
+export * from './ModalFooter'
+export * from './ModalHeader'
+export * from './ModalOverlay'
