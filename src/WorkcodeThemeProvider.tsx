@@ -42,8 +42,6 @@ const theme = extendTheme({
   },
 })
 
-console.log(theme)
-
 export const WorkcodeThemeProvider = ({
   children,
 }: WorkcodeThemeProviderProps) => {
