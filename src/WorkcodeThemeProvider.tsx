@@ -18,6 +18,7 @@ import {
   sliderTheme,
   switchTheme,
 } from './components'
+import { fonts } from './theme/fonts'
 
 interface WorkcodeThemeProviderProps {
   children: React.ReactNode
@@ -40,7 +41,10 @@ const theme = extendTheme({
     ...sliderTheme,
     ...switchTheme,
   },
+  ...fonts,
 })
+
+console.log(theme)
 
 export const WorkcodeThemeProvider = ({
   children,
