@@ -1,7 +1,8 @@
 {
   "name": "@workcode/components",
   "version": "1.0.0",
-  "main": "dist/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "source": "src/index.ts",
   "repository": "git@github.com:Michal99Zajac/components-workcode.git",
   "author": "Michal Zajac <michal.99.zajac@gmail.com>",
