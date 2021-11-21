@@ -11,4 +11,6 @@ export {
   usePrefersReducedMotion,
   useTheme,
   useToken,
+  useColorMode,
+  useColorModeValue,
 } from '@chakra-ui/react'

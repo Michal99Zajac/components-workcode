@@ -19,6 +19,8 @@ import {
   switchTheme,
 } from './components'
 import { fonts } from './theme/fonts'
+import { global } from './theme/global'
+import { config } from './theme/config'
 
 interface WorkcodeThemeProviderProps {
   children: React.ReactNode
@@ -42,9 +44,11 @@ const theme = extendTheme({
     ...switchTheme,
   },
   ...fonts,
+  ...config,
+  styles: {
+    ...global,
+  },
 })
-
-console.log(theme)
 
 export const WorkcodeThemeProvider = ({
   children,
