@@ -1,2 +1,1 @@
-export { default } from './EditableInput'
-export * from './EditableInput'
+export { EditableInput } from '@chakra-ui/react'

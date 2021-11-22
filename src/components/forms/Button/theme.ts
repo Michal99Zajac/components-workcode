@@ -2,42 +2,21 @@ import { Theme, ThemeComponents } from '@chakra-ui/react'
 
 export const buttonTheme: ThemeComponents = {
   Button: {
-    baseStyle: {
-      fontFamily: 'Source Code Pro',
-      fontWeight: '400',
-      fontStyle: 'normal',
-      borderRadius: '1px',
-    },
+    baseStyle: {},
     variants: {
-      primary: {
-        bg: '#102A43',
-        color: '#FFFFFF',
+      solid: ({ colorMode }) => ({
+        borderRadius: '1px',
+        bg: colorMode === 'dark' ? '#102A43' : '#ffffff',
+        color: colorMode === 'dark' ? '#FFFFFF' : '#091A2A',
         _hover: {
-          bg: '#173a5c',
+          bg: colorMode === 'dark' ? '#173a5c' : '#e6e6e6',
           _disabled: {
             bg: '#394046',
           },
         },
         _disabled: {
           bg: '#394046',
-          opacity: 1,
-        },
-        _focus: {
-          bg: '#173a5c',
-          shadow: 'none',
-        },
-      },
-      secondary: {
-        bg: '#ffffff',
-        color: '#091A2A',
-        _hover: {
-          bg: '#e6e6e6',
-          _disabled: {
-            bg: '#394046',
-          },
-        },
-        _disabled: {
-          bg: '#394046',
+          color: '#FFFFFF',
           opacity: 1,
           '& .chakra-spinner': {
             borderTopColor: '#ffffff',
@@ -45,14 +24,12 @@ export const buttonTheme: ThemeComponents = {
           },
         },
         _focus: {
-          bg: '#e6e6e6',
-          shadow: 'none',
+          boxShadow: '0 0 0 1px #63b3ed',
         },
-      },
+      }),
     },
     defaultProps: {
       size: 'sm',
-      variant: 'primary',
     },
   },
 }

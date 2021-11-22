@@ -1,4 +1,3 @@
-export { default } from './RangeSlider'
 export * from './RangeSlider'
 export * from './RangeSliderFilledTrack'
 export * from './RangeSliderThumb'

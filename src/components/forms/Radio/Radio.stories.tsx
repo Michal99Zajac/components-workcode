@@ -1,7 +1,7 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
 
-import Radio from './Radio'
+import { Radio } from './Radio'
 
 export const primary: Story = () => <Radio />
 

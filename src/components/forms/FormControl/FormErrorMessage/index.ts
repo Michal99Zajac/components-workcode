@@ -1,2 +1,1 @@
-export { default } from './FormErrorMessage'
-export * from './FormErrorMessage'
+export { FormErrorMessage } from '@chakra-ui/react'

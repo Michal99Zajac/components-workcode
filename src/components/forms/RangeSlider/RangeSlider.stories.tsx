@@ -1,7 +1,7 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
 
-import RangeSlider from './RangeSlider'
+import { RangeSlider } from './RangeSlider'
 
 export const primary: Story = () => <RangeSlider>hello</RangeSlider>
 

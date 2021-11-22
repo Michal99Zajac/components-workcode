@@ -1,2 +1,1 @@
-export { default } from './RangeSliderFilledTrack'
-export * from './RangeSliderFilledTrack'
+export { RangeSliderFilledTrack } from '@chakra-ui/react'

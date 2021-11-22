@@ -1,2 +1,1 @@
-export { default } from './PinInputField'
-export * from './PinInputField'
+export { PinInputField } from '@chakra-ui/react'

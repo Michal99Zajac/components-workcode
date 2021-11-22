@@ -1,2 +1,1 @@
-export { default } from './FormLabel'
-export * from './FormLabel'
+export { FormLabel } from '@chakra-ui/react'

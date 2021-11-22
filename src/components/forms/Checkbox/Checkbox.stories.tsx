@@ -1,7 +1,7 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
 
-import Checkbox from './Checkbox'
+import { Checkbox } from './Checkbox'
 
 export const primary: Story = () => <Checkbox>hello</Checkbox>
 

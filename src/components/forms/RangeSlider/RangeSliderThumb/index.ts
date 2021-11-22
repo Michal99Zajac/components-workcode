@@ -1,2 +1,1 @@
-export { default } from './RangeSliderThumb'
-export * from './RangeSliderThumb'
+export { RangeSliderThumb } from '@chakra-ui/react'

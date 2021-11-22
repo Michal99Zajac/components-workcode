@@ -1,3 +1,18 @@
 html, body {
-  background-color: #020F1C !important;
+  padding: 0 !important;
+}
+
+.bar {
+  padding: 1rem;
+}
+
+.story {
+  padding: 1rem;
+}
+
+.toggle {
+  background-color: #5900ff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: #FFFFFF;
 }

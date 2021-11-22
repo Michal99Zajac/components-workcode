@@ -1,2 +1,1 @@
-export { default } from './FormHelperText'
-export * from './FormHelperText'
+export { FormHelperText } from '@chakra-ui/react'

@@ -1,2 +1,1 @@
-export { default } from './RadioGroup'
-export * from './RadioGroup'
+export { RadioGroup } from '@chakra-ui/react'
