@@ -1,7 +1,7 @@
 import React from 'react'
 import {
   IconButton as ChakraIconButton,
-  IconButtonProps as ChakraIconButtonProps,
+  IconButtonProps,
 } from '@chakra-ui/react'
 
 import { RingIcon, ChatIcon, MoreIcon } from '../../icons'
@@ -22,17 +22,6 @@ const styles = {
   },
   borderRadius: '100%',
   bg: 'transparent',
-}
-
-export interface IconButtonProps extends ChakraIconButtonProps {
-  variant?:
-    | 'ghost'
-    | 'link'
-    | 'outline'
-    | 'solid'
-    | 'unstyled'
-    | 'primary'
-    | 'secondary'
 }
 
 export function RingIconButton(props: IconButtonProps) {

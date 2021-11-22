@@ -1,2 +1,1 @@
-export { default } from './ButtonGroup'
-export * from './ButtonGroup'
+export { ButtonGroup } from '@chakra-ui/react'

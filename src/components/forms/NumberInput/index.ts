@@ -1,4 +1,3 @@
-export { default } from './NumberInput'
 export * from './NumberInput'
 export * from './NumberDecrementStepper'
 export * from './NumberIncrementStepper'

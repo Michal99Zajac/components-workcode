@@ -3,68 +3,36 @@ import { Theme, ThemeComponents } from '@chakra-ui/react'
 export const inputTheme: ThemeComponents = {
   Input: {
     parts: ['addon', 'field', 'element'],
-    baseStyle: {
-      field: {
-        fontFamily: 'Source Code Pro',
-        fontWeight: '400',
-        fontStyle: 'normal',
-      },
-      addon: {
-        fontFamily: 'Source Code Pro',
-        fontWeight: '400',
-        fontStyle: 'normal',
-      },
-    },
+    baseStyle: {},
     variants: {
-      primary: {
+      outline: ({ colorMode }) => ({
         field: {
-          color: '#ffffff',
-          bg: '#102A43',
+          color: colorMode === 'dark' ? '#ffffff' : '#091A2A',
+          bg: colorMode === 'dark' ? '#102A43' : '#ffffff',
           borderRadius: '1px',
+          border: 'none',
+          _focus: {
+            _hover: {
+              bg: colorMode === 'dark' ? '#102A43' : '#ffffff',
+            },
+          },
           _disabled: {
             bg: '#394046',
             _hover: {
               bg: '#394046',
             },
           },
-          _invalid: {
-            borderRight: '5px solid red',
-          },
           _hover: {
-            bg: '#173a5c',
+            bg: colorMode === 'dark' ? '#173a5c' : '#e6e6e6',
           },
         },
         addon: {
           color: '#ffffff',
           bg: '#114374',
         },
-      },
-      secondary: {
-        field: {
-          color: '#091A2A',
-          bg: '#ffffff',
-          borderRadius: '1px',
-          _disabled: {
-            bg: '#394046',
-            _hover: {
-              bg: '#394046',
-            },
-          },
-          _invalid: {
-            borderRight: '5px solid red',
-          },
-          _hover: {
-            bg: '#e6e6e6',
-          },
-        },
-        addon: {
-          color: '#ffffff',
-          bg: '#114374',
-        },
-      },
+      }),
     },
     defaultProps: {
-      variant: 'primary',
       size: 'sm',
     },
   },

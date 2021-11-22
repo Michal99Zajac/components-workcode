@@ -3,30 +3,25 @@ import { Theme, ThemeComponents } from '@chakra-ui/react'
 export const selectTheme: ThemeComponents = {
   Select: {
     parts: ['field', 'icon'],
-    baseStyle: {
-      field: {
-        fontFamily: 'Source Code Pro',
-        fontWeight: '400',
-        fontStyle: 'normal',
-      },
-    },
+    baseStyle: {},
     variants: {
-      primary: {
+      outline: ({ colorMode }) => ({
         field: {
-          color: '#ffffff',
-          bg: '#102A43',
+          color: colorMode === 'dark' ? '#ffffff' : '#091A2A',
+          bg: colorMode === 'dark' ? '#102A43' : '#ffffff',
           borderRadius: '1px',
+          border: 'none',
           '& option': {
-            bg: '#102A43',
+            bg: colorMode === 'dark' ? '#102A43' : '#ffffff',
           },
           _focus: {
-            boxShadow: '0 4px 8px 0 #173a5c',
+            boxShadow: '0 0 0 1px #63b3ed',
             _hover: {
-              bg: '#102A43',
+              bg: colorMode === 'dark' ? '#102A43' : '#ffffff',
             },
           },
           _hover: {
-            bg: '#173a5c',
+            bg: colorMode === 'dark' ? '#173a5c' : '#e6e6e6',
             cursor: 'pointer',
           },
           _disabled: {
@@ -38,46 +33,14 @@ export const selectTheme: ThemeComponents = {
           },
         },
         icon: {
-          color: '#ffffff',
-        },
-      },
-      secondary: {
-        field: {
-          color: '#091A2A',
-          bg: '#ffffff',
-          borderRadius: '1px',
-          '& option': {
-            bg: '#ffffff',
-          },
-          _focus: {
-            boxShadow: '0 4px 8px 0 #e6e6e6',
-            _hover: {
-              bg: '#ffffff',
-            },
-          },
-          _hover: {
-            bg: '#e6e6e6',
-            cursor: 'pointer',
-          },
-          _disabled: {
-            bg: '#394046',
-            cursor: 'not-allowed',
-            _hover: {
-              bg: '#394046',
-            },
-            color: '#ffffff',
-          },
-        },
-        icon: {
-          color: '#091A2A',
+          color: colorMode === 'dark' ? '#ffffff' : '#091A2A',
           _disabled: {
             color: '#ffffff',
           },
         },
-      },
+      }),
     },
     defaultProps: {
-      variant: 'primary',
       size: 'sm',
     },
   },

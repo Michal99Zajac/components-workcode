@@ -1,2 +1,1 @@
-export { default } from './NumberInputField'
-export * from './NumberInputField'
+export { NumberInputField } from '@chakra-ui/react'

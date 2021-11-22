@@ -1,7 +1,7 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
 
-import Editable from './Editable'
+import { Editable } from './Editable'
 
 export const primary: Story = () => <Editable>hello</Editable>
 

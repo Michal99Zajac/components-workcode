@@ -1,7 +1,7 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
 
-import NumberInput from './NumberInput'
+import { NumberInput } from './NumberInput'
 
 export const primary: Story = () => <NumberInput>hello</NumberInput>
 

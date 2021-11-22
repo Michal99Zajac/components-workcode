@@ -1,7 +1,7 @@
 import React from 'react'
 import { Meta, Story } from '@storybook/react'
 
-import FormControl from './FormControl'
+import { FormControl } from './FormControl'
 
 export const primary: Story = () => <FormControl>hello</FormControl>
 
