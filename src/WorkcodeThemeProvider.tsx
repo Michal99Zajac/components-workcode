@@ -53,6 +53,8 @@ const theme = extendTheme({
 export const WorkcodeThemeProvider = ({
   children,
 }: WorkcodeThemeProviderProps) => {
+  console.log(theme)
+
   return (
     <ChakraProvider theme={theme}>
       <Fonts />

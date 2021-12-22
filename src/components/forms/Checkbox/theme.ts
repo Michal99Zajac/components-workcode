@@ -2,11 +2,32 @@ import { Theme, ThemeComponents } from '@chakra-ui/react'
 
 export const checkboxTheme: ThemeComponents = {
   Checkbox: {
-    parts: [],
+    parts: ['control'],
     sizes: {},
-    baseStyle: {},
-    variants: {},
-    defaultProps: {},
+    baseStyle: {
+      control: {
+        borderRadius: '1px',
+        border: 'none',
+      },
+    },
+    variants: {
+      solid: ({ colorMode }) => ({
+        control: {
+          bg: colorMode === 'dark' ? '#102A43' : '#ffffff',
+          borderColor: colorMode === 'dark' ? '#102A43' : '#ffffff',
+          _checked: {
+            bg: 'green',
+          },
+          _focus: {
+            boxShadow: '0 0 0 1px #63b3ed',
+          },
+        },
+      }),
+    },
+    defaultProps: {
+      size: 'md',
+      variant: 'solid',
+    },
   },
 }
 
