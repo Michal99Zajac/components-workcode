@@ -1,7 +1,7 @@
 import React from 'react'
+import { useColorMode } from '@chakra-ui/react'
 
-import ThemeProvider from '../src/WorkcodeThemeProvider'
-import { useColorMode } from '../src/hooks'
+import ThemeProvider from '../src/theme'
 import './style.css'
 
 export const parameters = {
@@ -15,15 +15,18 @@ export const parameters = {
 }
 
 const ToggleButton = () => {
-  const { colorMode, toggleColorMode } = useColorMode()
+  const { toggleColorMode, colorMode } = useColorMode()
 
   return (
     <div className='bar'>
       <button
+        style={{
+          justifyContent: colorMode === 'dark' ? 'flex-end' : 'flex-start',
+        }}
         className='toggle'
         onClick={toggleColorMode}
       >
-        Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
+        <div className='tog' style={{ backgroundColor: colorMode === 'dark' ? '#173a5c' : '#ffffff' }} />
       </button>
     </div>
   )

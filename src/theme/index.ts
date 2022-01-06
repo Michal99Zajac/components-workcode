@@ -1,3 +1,4 @@
+export { default } from './theme'
+export * from './theme'
+export * from './components'
 export * from './fonts'
-export * from './config'
-export * from './global'
