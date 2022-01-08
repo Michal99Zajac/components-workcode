@@ -1,5 +1,0 @@
-export * from './RangeSlider'
-export * from './RangeSliderFilledTrack'
-export * from './RangeSliderThumb'
-export * from './RangeSliderTrack'
-export * from './theme'

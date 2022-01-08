@@ -1,4 +1,3 @@
-export { default } from './WorkcodeThemeProvider'
-export * from './WorkcodeThemeProvider'
-export * from './components'
-export * from './hooks'
+export { default } from './theme'
+export * from './theme'
+export * from './icons'
