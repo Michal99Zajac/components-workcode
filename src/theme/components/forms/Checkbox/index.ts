@@ -1,6 +1,6 @@
 import { Theme, ThemeComponents } from '@chakra-ui/react'
 
-import color from '../../../colors'
+import { color, shadow } from '../../../styles'
 
 export const checkboxTheme: ThemeComponents = {
   Checkbox: {
@@ -19,25 +19,22 @@ export const checkboxTheme: ThemeComponents = {
         control: {
           bg: color(colorMode).primary.input.bg,
           '&[data-hover]': {
-            boxShadow: `0 0 0 1px ${
-              color(colorMode).primary.input._hover.border
-            }`,
+            boxShadow: shadow(color(colorMode).primary.input._hover.boxShadow)
+              .components._hover,
           },
           '&[data-disabled]': {
-            boxShadow: 'none',
+            boxShadow: shadow().components._disabled,
           },
           '&[data-checked], &[data-checked][data-hover]': {
             bg: color(colorMode).primary.input._checked.bg,
           },
           '&[data-invalid]': {
-            boxShadow: `0 0 0 1px ${
-              color(colorMode).primary.input._invalid.border
-            }`,
+            boxShadow: shadow(color(colorMode).primary.input._invalid.boxShadow)
+              .components._invalid,
           },
           '&[data-focus]': {
-            boxShadow: `0 0 0 2px ${
-              color(colorMode).primary.input._focus.border
-            }`,
+            boxShadow: shadow(color(colorMode).primary.input._focus.boxShadow)
+              .components._focus,
           },
         },
         icon: {

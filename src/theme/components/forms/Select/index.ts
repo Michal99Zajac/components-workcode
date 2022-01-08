@@ -1,6 +1,6 @@
 import { Theme, ThemeComponents } from '@chakra-ui/react'
 
-import color from '../../../colors'
+import { color, shadow } from '../../../styles'
 
 export const selectTheme: ThemeComponents = {
   Select: {
@@ -13,23 +13,20 @@ export const selectTheme: ThemeComponents = {
           borderRadius: '0',
           border: 'none',
           _focus: {
-            boxShadow: `0 0 0 2px ${
-              color(colorMode).primary.input._focus.border
-            }`,
+            boxShadow: shadow(color(colorMode).primary.input._focus.boxShadow)
+              .components._focus,
           },
           _hover: {
-            boxShadow: `0 0 0 1px ${
-              color(colorMode).primary.input._hover.border
-            }`,
+            boxShadow: shadow(color(colorMode).primary.input._hover.boxShadow)
+              .components._hover,
             cursor: 'pointer',
           },
           _invalid: {
-            boxShadow: `0 0 0 1px ${
-              color(colorMode).primary.input._invalid.border
-            }`,
+            boxShadow: shadow(color(colorMode).primary.input._invalid.boxShadow)
+              .components._invalid,
           },
           '&[disabled]': {
-            boxShadow: 'none',
+            boxShadow: shadow().components._disabled,
           },
           '& > option': {
             bg: 'inherit',

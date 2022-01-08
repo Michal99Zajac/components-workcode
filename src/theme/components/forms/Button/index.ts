@@ -1,6 +1,6 @@
 import { Theme, ThemeComponents } from '@chakra-ui/react'
 
-import color from '../../../colors'
+import { color, shadow } from '../../../styles'
 
 export const buttonTheme: ThemeComponents = {
   Button: {
@@ -13,17 +13,15 @@ export const buttonTheme: ThemeComponents = {
         color: color(colorMode).primary.input.text,
         '&:hover:enabled': {
           bg: color(colorMode).primary.input._hover.bg,
-          boxShadow: `0 0 0 1px ${
-            color(colorMode).primary.input._hover.border
-          }`,
+          boxShadow: shadow(color(colorMode).primary.input._hover.boxShadow)
+            .components._hover,
         },
         '&:hover[disabled]': {
           bg: color(colorMode).primary.input.bg,
         },
         '&:focus:enabled': {
-          boxShadow: `0 0 0 2px ${
-            color(colorMode).primary.input._focus.border
-          }`,
+          boxShadow: shadow(color(colorMode).primary.input._focus.boxShadow)
+            .components._focus,
         },
       }),
     },
