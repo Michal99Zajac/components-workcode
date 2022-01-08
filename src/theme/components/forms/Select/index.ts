@@ -1,42 +1,42 @@
 import { Theme, ThemeComponents } from '@chakra-ui/react'
 
+import color from '../../../colors'
+
 export const selectTheme: ThemeComponents = {
   Select: {
     parts: ['field', 'icon'],
-    baseStyle: {},
     variants: {
       outline: ({ colorMode }) => ({
         field: {
-          color: colorMode === 'dark' ? '#ffffff' : '#091A2A',
-          bg: colorMode === 'dark' ? '#102A43' : '#ffffff',
-          borderRadius: '1px',
+          color: color(colorMode).primary.input.text,
+          bg: color(colorMode).primary.input.bg,
+          borderRadius: '0',
           border: 'none',
-          '& option': {
-            bg: colorMode === 'dark' ? '#102A43' : '#ffffff',
-          },
           _focus: {
-            boxShadow: '0 0 0 1px #63b3ed',
-            _hover: {
-              bg: colorMode === 'dark' ? '#102A43' : '#ffffff',
-            },
+            boxShadow: `0 0 0 2px ${
+              color(colorMode).primary.input._focus.border
+            }`,
           },
           _hover: {
-            bg: colorMode === 'dark' ? '#173a5c' : '#e6e6e6',
+            boxShadow: `0 0 0 1px ${
+              color(colorMode).primary.input._hover.border
+            }`,
             cursor: 'pointer',
           },
-          _disabled: {
-            bg: '#394046',
-            cursor: 'not-allowed',
-            _hover: {
-              bg: '#394046',
-            },
+          _invalid: {
+            boxShadow: `0 0 0 1px ${
+              color(colorMode).primary.input._invalid.border
+            }`,
+          },
+          '&[disabled]': {
+            boxShadow: 'none',
+          },
+          '& > option': {
+            bg: 'inherit',
           },
         },
         icon: {
-          color: colorMode === 'dark' ? '#ffffff' : '#091A2A',
-          _disabled: {
-            color: '#ffffff',
-          },
+          color: color(colorMode).primary.input.text,
         },
       }),
     },

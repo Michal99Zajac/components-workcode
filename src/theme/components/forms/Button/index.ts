@@ -1,44 +1,28 @@
 import { Theme, ThemeComponents } from '@chakra-ui/react'
 
-import { dark, light } from '../../../colors'
+import color from '../../../colors'
 
 export const buttonTheme: ThemeComponents = {
   Button: {
     baseStyle: {
-      borderRadius: '1px',
+      borderRadius: '0px',
     },
     variants: {
       solid: ({ colorMode }) => ({
-        bg:
-          colorMode === 'dark' ? dark.primary.input.bg : light.primary.input.bg,
-        color:
-          colorMode === 'dark'
-            ? dark.primary.input.text
-            : light.primary.input.text,
-        _hover: {
-          bg:
-            colorMode === 'dark'
-              ? dark.primary.input._hover.bg
-              : light.primary.input._hover.bg,
-          _disabled: {
-            bg:
-              colorMode === 'dark'
-                ? dark.primary.input._disabled.bg
-                : light.primary.input._disabled.bg,
-          },
-        },
-        _disabled: {
-          bg:
-            colorMode === 'dark'
-              ? dark.primary.input._disabled.bg
-              : light.primary.input._disabled.bg,
-          opacity: 1,
-        },
-        _focus: {
+        bg: color(colorMode).primary.input.bg,
+        color: color(colorMode).primary.input.text,
+        '&:hover:enabled': {
+          bg: color(colorMode).primary.input._hover.bg,
           boxShadow: `0 0 0 1px ${
-            colorMode === 'dark'
-              ? dark.primary.input._focus.border
-              : light.primary.input._focus.border
+            color(colorMode).primary.input._hover.border
+          }`,
+        },
+        '&:hover[disabled]': {
+          bg: color(colorMode).primary.input.bg,
+        },
+        '&:focus:enabled': {
+          boxShadow: `0 0 0 2px ${
+            color(colorMode).primary.input._focus.border
           }`,
         },
       }),

@@ -2,9 +2,7 @@ import React from 'react'
 import { Meta, Story } from '@storybook/react'
 import { Stack, Textarea } from '@chakra-ui/react'
 
-export const primaryTextarea: Story = () => (
-  <Textarea placeholder="type something" />
-)
+export const primary: Story = () => <Textarea placeholder="type something" />
 export const sizes: Story = () => (
   <Stack>
     <Textarea size="xs" placeholder="type something" />

@@ -1,76 +1,45 @@
-export const dark = {
-  bg: '#020F1C',
-  warning: '#E9352A',
-  primary: {
-    input: {
-      bg: '#102A43',
-      border: '#63b3ed',
-      text: '#FFFFFF',
-      icon: '#FFFFFF',
-      _hover: {
-        bg: '#124265',
-        border: '#63b3ed',
+export const color = (colorMode: 'dark' | 'light') => {
+  const isDark = colorMode === 'dark'
+
+  return {
+    bg: isDark ? '#020F1C' : '',
+    warning: isDark ? '#E9352A' : '',
+    primary: {
+      input: {
+        bg: isDark ? '#102A43' : '',
+        border: isDark ? '#63b3ed' : '',
+        text: isDark ? '#FFFFFF' : '',
+        icon: isDark ? '#FFFFFF' : '',
+        _hover: {
+          bg: isDark ? '#102A43' : '',
+          border: isDark ? '#63b3ed' : '',
+        },
+        _invalid: {
+          border: isDark ? '#E9352A' : '',
+          bg: isDark ? '#E9352A' : '',
+        },
+        _focus: {
+          bg: isDark ? '#102A43' : '',
+          border: isDark ? '#63b3ed' : '',
+        },
+        _checked: {
+          bg: isDark ? '#3f8cc4' : '',
+          border: isDark ? '#63b3ed' : '',
+        },
+        _disabled: {
+          bg: isDark ? '#3A4D5F' : '',
+          border: isDark ? '#3A4D5F' : '',
+        },
+        addon: {
+          bg: isDark ? '#051D33' : '',
+        },
       },
-      _focus: {
-        bg: '#102A43',
-        border: '#63b3ed',
-      },
-      _checked: {
-        bg: '#63b3ed',
-        border: '#63b3ed',
-      },
-      _disabled: {
-        bg: '#3A4D5F',
-        border: '#3A4D5F',
-      },
-      addon: {
-        bg: '#051D33',
+      surface: {
+        bg: isDark ? '#091A2A' : '',
+        _hover: isDark ? '#0F2437' : '',
       },
     },
-    surface: {
-      bg: '#091A2A',
-      _hover: '#0F2437',
-    },
-  },
+  }
 }
 
-export const light = {
-  bg: '',
-  warning: '',
-  primary: {
-    input: {
-      bg: '',
-      border: '',
-      text: '',
-      icon: '',
-      _hover: {
-        bg: '',
-        border: '',
-      },
-      _focus: {
-        bg: '',
-        border: '',
-      },
-      _checked: {
-        bg: '',
-        border: '',
-      },
-      _disabled: {
-        bg: '',
-        border: '',
-      },
-      addon: {
-        bg: '',
-      },
-    },
-    surface: {
-      bg: '',
-      _hover: '',
-    },
-  },
-}
-
-export default {
-  dark: dark,
-  light: light,
-}
+export default color

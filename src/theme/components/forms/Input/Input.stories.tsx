@@ -2,14 +2,14 @@ import React from 'react'
 import { Meta, Story } from '@storybook/react'
 import { Stack, InputGroup, InputLeftAddon, Input } from '@chakra-ui/react'
 
-export const primaryInput: Story = () => <Input placeholder="type something" />
-export const invalidInput: Story = () => (
+export const primary: Story = () => <Input placeholder="type something" />
+export const invalid: Story = () => (
   <Input isInvalid placeholder="type something" />
 )
-export const passwordInput: Story = () => (
+export const password: Story = () => (
   <Input type="password" placeholder="password" />
 )
-export const primaryDisabled: Story = () => (
+export const disabled: Story = () => (
   <Input isDisabled placeholder="type something" />
 )
 export const sizes: Story = () => (
@@ -20,7 +20,7 @@ export const sizes: Story = () => (
     <Input size="lg" placeholder="type something" />
   </Stack>
 )
-export const inputWithAddon: Story = () => (
+export const withAddon: Story = () => (
   <InputGroup>
     <InputLeftAddon>primary</InputLeftAddon>
     <Input placeholder="type something" />

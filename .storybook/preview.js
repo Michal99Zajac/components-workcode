@@ -26,7 +26,7 @@ const ToggleButton = () => {
         className='toggle'
         onClick={toggleColorMode}
       >
-        <div className='tog' style={{ backgroundColor: colorMode === 'dark' ? '#173a5c' : '#ffffff' }} />
+        <div className='tog'/>
       </button>
     </div>
   )

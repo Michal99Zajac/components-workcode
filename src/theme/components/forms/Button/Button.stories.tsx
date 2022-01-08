@@ -3,10 +3,10 @@ import { Story, Meta } from '@storybook/react'
 import { ButtonGroup, Stack, Button } from '@chakra-ui/react'
 import { EmailIcon } from '@chakra-ui/icons'
 
-export const primaryButton: Story = () => <Button>Click Me!</Button>
-export const disabledButton: Story = () => <Button isDisabled>Click Me!</Button>
-export const loadingButton: Story = () => <Button isLoading>Click Me!</Button>
-export const iconButton: Story = () => (
+export const primary: Story = () => <Button>Click Me!</Button>
+export const disabled: Story = () => <Button isDisabled>Click Me!</Button>
+export const loading: Story = () => <Button isLoading>Click Me!</Button>
+export const withIcon: Story = () => (
   <Button leftIcon={<EmailIcon />}>Click me!</Button>
 )
 export const sizes: Story = () => (

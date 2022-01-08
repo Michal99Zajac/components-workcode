@@ -11,6 +11,7 @@ export const sizes: Story = () => (
     <Checkbox size="lg">check me!</Checkbox>
   </Stack>
 )
+export const invalid: Story = () => <Checkbox isInvalid>check me!</Checkbox>
 
 export default {
   title: 'components/forms/Checkbox',
