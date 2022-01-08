@@ -1,7 +1,7 @@
 import React from 'react'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 
-import color from './colors'
+import { color } from './styles'
 import { SourceCodeProFonts } from './fonts'
 import { components } from './components'
 

@@ -12,23 +12,23 @@ export const color = (colorMode: 'dark' | 'light') => {
         icon: isDark ? '#FFFFFF' : '',
         _hover: {
           bg: isDark ? '#102A43' : '',
-          border: isDark ? '#63b3ed' : '',
+          boxShadow: isDark ? '#63b3ed' : '',
         },
         _invalid: {
-          border: isDark ? '#E9352A' : '',
+          boxShadow: isDark ? '#E9352A' : '',
           bg: isDark ? '#E9352A' : '',
         },
         _focus: {
           bg: isDark ? '#102A43' : '',
-          border: isDark ? '#63b3ed' : '',
+          boxShadow: isDark ? '#63b3ed' : '',
         },
         _checked: {
           bg: isDark ? '#3f8cc4' : '',
-          border: isDark ? '#63b3ed' : '',
+          boxShadow: isDark ? '#63b3ed' : '',
         },
         _disabled: {
           bg: isDark ? '#3A4D5F' : '',
-          border: isDark ? '#3A4D5F' : '',
+          boxShadow: isDark ? '#3A4D5F' : '',
         },
         addon: {
           bg: isDark ? '#051D33' : '',
