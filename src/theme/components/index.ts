@@ -6,6 +6,7 @@ import {
   inputTheme,
   selectTheme,
   textareaTheme,
+  switchTheme,
 } from './forms'
 
 export const components: ThemeComponents = {
@@ -14,6 +15,7 @@ export const components: ThemeComponents = {
   Input: inputTheme.Input,
   Select: selectTheme.Select,
   Textarea: textareaTheme.Textarea,
+  Switch: switchTheme.Switch,
 }
 
 export default components
